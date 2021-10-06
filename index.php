@@ -96,7 +96,7 @@
         Dear, <b>Endra Aji Purnama</b><br><b>Section 1</b><br><br>
         We, Firda and Mahendra would like to invite you to witness and be a part of our new beginning.
 
-Please join us on 6 November 2021 at Venue as we tie the knot.
+Please join us on <b>6 November 2021 at Villa Nusantara Syariah, Malang</b> as we tie the knot.
 Your presence will be valuable to us.
 <br>
 <br>
