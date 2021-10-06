@@ -6,11 +6,17 @@
     $(window).on("load", function() {
 
         // Site loader 
+        var delayMs = 1500; // delay in milliseconds
+        
+        setTimeout(function(){
+            $('#personModal').modal('show');
+        }, delayMs);
 
         $(".loader-inner").fadeOut();
         $(".loader").delay(200).fadeOut("slow");
 
     });
+
 
 
      // Site navigation setup

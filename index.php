@@ -85,6 +85,29 @@
          </div>
          <!--End container-->
          <!--End header-->
+         <!-- Modal -->
+<div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <span>Invitation</span>
+      </div>
+      <div class="modal-body">
+        Dear, <b>Endra Aji Purnama</b><br><b>Section 1</b><br><br>
+        We, Firda and Mahendra would like to invite you to witness and be a part of our new beginning.
+
+Please join us on 6 November 2021 at Venue as we tie the knot.
+Your presence will be valuable to us.
+<br>
+<br>
+Regards,<br>Bride & Groom
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary container-fluid">Open</button>
+      </div>
+    </div>
+  </div>
+</div>
          <!--Hero section-->
          <section class="gradient-overlay gradient-overlay-dark ">
             <img class="bg-image" src="assets/img/cover.jpg" alt="">
