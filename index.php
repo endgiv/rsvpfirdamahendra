@@ -44,7 +44,7 @@
                      </button>
                      <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end mr-5 ">
                         <ul class=" navbar-nav  header-navbar-nav">
-                           <li><a class=" nav-link scroll" href="#resto">Get to know Me</a></li>
+                           <li><a class=" nav-link scroll" href="#resto">Get to know</a></li>
                            <li><a class=" nav-link scroll" href="/how-to-order.php">How to order?</a></li>
                            <!-- <li><a class=" nav-link scroll" href="#wedding">Wedding</a></li>
                            <li><a class=" nav-link scroll" href="#gallery">Gallery</a></li>
@@ -61,9 +61,9 @@
             
             
          </header>
-         <!--Container-->
-         <div class="container-fluid ">
-            <nav class="navbar navbar-dark card card-body bg-primary navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom justify-content-center show p-0">
+         <!--Bottom Navbar-->
+         
+            <nav class="navbar navbar-dark card card-body bg-primary navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom justify-content-center show p-0 shadow-lg">
                   <ul class="navbar-nav nav-justified w-100 d-flex align-items-center">
                      <li class="nav-item small"><a class=" nav-link text-center scroll" href="#resto">
                         <span class="fi fi-rr-calendar"></span><br>
@@ -82,28 +82,27 @@
                         <span class="small">Location</span></a></li>
                   </ul>
             </nav>
-         </div>
-         <!--End container-->
+         
+         <!--End Bottom Navbar-->
          <!--End header-->
          <!-- Modal -->
 <div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header text-center">
-        <span>Invitation</span>
+      <div class="modal-header font-secondary h4 text-center text-primary">
+        <div class="container-fluid">Invitation</div>
       </div>
-      <div class="modal-body">
-        Dear, <b>Endra Aji Purnama</b><br><b>Section 1</b><br><br>
-        We, Firda and Mahendra would like to invite you to witness and be a part of our new beginning.
+      <div class="modal-body text-justify">
+         Dear, <b>Endra Aji Purnama</b><br><b>Section 1</b><br><br>
+         We, Firda and Mahendra would like to invite you to witness and be a part of our new beginning.
 
-Please join us on <b>6 November 2021 at Villa Nusantara Syariah, Malang</b> as we tie the knot.
-Your presence will be valuable to us.
-<br>
-<br>
-Regards,<br>Bride & Groom
+         Please join us on <b>6 November 2021</b> at <b>Villa Nusantara Syariah, Malang</b> as we tie the knot.
+         Your presence will be valuable to us.
+         <br> <br>
+         Regards,<br>Bride & Groom
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary container-fluid">Open</button>
+        <button type="button" class="btn btn-primary container-fluid" data-dismiss="modal">Open</button>
       </div>
     </div>
   </div>
@@ -116,7 +115,7 @@ Regards,<br>Bride & Groom
                <div class="row min-vh-80 align-items-center z-index-2 position-relative text-center">
                   <div class="col-12">
                      <h1 class="display-2  text-white mb-4">Firda &amp; Mahendra</h1>
-                     <p class="font-weight-300 text-light  lead mb-5 ">Saturday, 06 November 2021 - 28 Chalmers Street, Sydney. </p>
+                     <p class="font-weight-300 text-light  lead mb-5 ">Saturday, 06 November 2021 - Villa Nusantara Syariah, Malang. </p>
                      <a href="#rsvp" class="btn btn-primary btn-wide-sm btn-sm  scroll">RSVP</a>
                   </div>
                </div>
@@ -1016,6 +1015,10 @@ Regards,<br>Bride & Groom
                         <div class="form-group">
                            <label>Email Address</label>
                            <input name="email" type="email" class="form-control form-control-lg" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                           <label >Your Wishes</label>
+                           <input name="wishes" type="text" class="form-control form-control-lg" placeholder="Your Wishes">
                         </div>
                         <div class="row">
                            <div class="col-12">

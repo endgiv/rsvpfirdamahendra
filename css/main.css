@@ -388,7 +388,7 @@ a,::before
     -o-transition: all 0.3s ease 0s;
 }
 .shadow-lg {
-  box-shadow: 0 0 40px rgba(38, 38, 38, 0.1) !important
+  box-shadow: 0 0 40px rgba(38, 38, 38, 0.25) !important
 }
 .font-size-11-5 {
     font-size: .71875rem;
