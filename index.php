@@ -175,7 +175,7 @@
                                     l368.4115-214.6845c127.2958-74.1792,172.7084-240.1479,98.7059-367.5465C818.4728,161.3996,655.4992,118.375,528.4855,192.3897z" />
                               </mask>
                            </defs>
-                           <image mask="url(#mask)" width="981" height="885" xlink:href="assets/img/mask-lg.jpg" />
+                           <image mask="url(#mask)" width="981" height="885" xlink:href="assets/img/img1.jpg" />
                            <g>
                               <path fill="none" stroke="#59745d" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" d="M747.8805,524.349
                                  c108.1955-68.637,139.1927-213.677,70.5558-321.8725S606.4696,62.2462,498.2741,130.8832l0,0" />
