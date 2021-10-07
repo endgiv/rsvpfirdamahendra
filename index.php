@@ -32,8 +32,8 @@
          <!--Header-->
          <header class="header default">
             <div class="header-section">
-               <!--Container-->
-               <div class="container-fluid ">
+               <!--Container 1-->
+               <div class="container-fluid">
                   <nav class="navbar navbar-expand-lg header-navbar ml-0 ml-lg-5">
                      <a class=" navbar-brand navbar-logo scroll" href="#wrapper">
                      <img class="mb-0 logo-light" src="assets/svg/logo-light.svg" alt="">
@@ -44,36 +44,36 @@
                      </button>
                      <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end mr-5 ">
                         <ul class=" navbar-nav  header-navbar-nav">
-                           <li><a class=" nav-link scroll" href="#resto">Get to know</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#wedding">Wedding</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#gallery">Gallery</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#gift">Gift Registry</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#friends">Friends</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#rsvp">Rsvp</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#location">Location</a></li>
+                           <li><a class=" nav-link scroll d-md-none" href="#resto">Get to know</a></li>
                            <li><a class=" nav-link scroll" href="/how-to-order.php">How to order?</a></li>
-                           <!-- <li><a class=" nav-link scroll" href="#wedding">Wedding</a></li>
-                           <li><a class=" nav-link scroll" href="#gallery">Gallery</a></li>
-                           <li><a class=" nav-link scroll" href="#gift">Gift Registry</a></li>
-                           <li><a class=" nav-link scroll" href="#friends">Friends</a></li>
-                           <li><a class=" nav-link scroll" href="#rsvp">Rsvp</a></li>
-                           <li><a class=" nav-link scroll" href="#location">Location</a></li> -->
                         </ul>
                      </div>
                   </nav>
                </div>
-               <!--End container-->
+               <!--End container 1-->
             </div>
             
             
          </header>
          <!--Bottom Navbar-->
          
-            <nav class="navbar navbar-dark card card-body bg-primary navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom justify-content-center show p-0 shadow-lg">
+            <nav class="navbar navbar-dark card card-body bg-primary navbar-expand d-md-none fixed-bottom justify-content-center show p-0 shadow-lg">
                   <ul class="navbar-nav nav-justified w-100 d-flex align-items-center">
-                     <li class="nav-item small"><a class=" nav-link text-center scroll" href="#resto">
+                     <li class="nav-item small"><a class=" nav-link text-center scroll" href="#wrapper">
+                        <span class="fi fi-rr-home"></span><br>
+                        <span class="small">Home</span></a></li>
+                     <li class="nav-item small "><a class=" nav-link text-center scroll" href="#resto">
                         <span class="fi fi-rr-calendar"></span><br>
                         <span class="small">Date</span></a></li>
-                     <li class="nav-item small "><a class=" nav-link text-center scroll" href="#wedding">
+                     <li class="nav-item card large"><a class=" nav-link text-center scroll text-primary" href="#wedding">
                         <span class="fi fi-rr-cake-wedding"></span><br>
                         <span class="small">Wedding</span></a></li>
-                     <li class="nav-item card large"><a class=" nav-link text-center scroll text-primary" href="#wrapper">
-                        <span class="fa fa-home "></span><br>
-                        <span class="small">Home</span></a></li>
                      <li class="nav-item small "><a class=" nav-link text-center scroll" href="#rsvp">
                         <span class="fi fi-rr-envelope"></span><br>
                         <span class="small">RSVP</span></a></li>
@@ -86,23 +86,24 @@
          <!--End Bottom Navbar-->
          <!--End header-->
          <!-- Modal -->
-<div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade btn-audio" id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header font-secondary h4 text-center text-primary">
         <div class="container-fluid">Invitation</div>
       </div>
       <div class="modal-body text-justify">
-         Dear, <b>Endra Aji Purnama</b><br><b>Section 1</b><br><br>
-         We, Firda and Mahendra would like to invite you to witness and be a part of our new beginning.
+         Dear, <b>Endra Aji Purnama</b>-<b>Section 1</b><br><br>
+         We would like to invite you to be a part of our new beginning.
 
-         Please join us on <b>6 November 2021</b> at <b>Villa Nusantara Syariah, Malang</b> as we tie the knot.
+         Please join us on <b>6 November 2021</b> at <b>Villa Nusantara Syariah, Malang</b>.
          Your presence will be valuable to us.
-         <br> <br>
-         Regards,<br>Bride & Groom
+         <br><br>
+         Regards,<br>Firda & Mahendra
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary container-fluid" data-dismiss="modal">Open</button>
+        <audio id="audio" src="assets/audio/audio.mp3" type="audio/mpeg" loop="true"></audio>
       </div>
     </div>
   </div>
@@ -144,7 +145,7 @@
                   <div class="col-md-6 mb-5 mb-md-0">
                      <div class="pr-md-4">
                         <h1 class="font-secondary display-4">Save the date</h1>
-                        <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday May 30th, 2019 - 28 Chalmers Street, Sydney.</p>
+                        <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday 07 November 2021 - Villa Nusantara Syariah, Malang.</p>
                         <p class="mb-4 pr-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae.</p>
                         <div class="countdown row text-center"></div>
                      </div>
@@ -450,10 +451,8 @@
                         </div>
                         <h5 class="mb-0 text-white">Wedding Party</h5>
                         <h6 class="mb-5 text-white">17:00h - 19:00</h6>
-                        <p class="text-align-center">Villa Nikko
-                           <br>501 Route de Geary
-                           <br>San Franciscio
-                           <br>(415) 292 - 0100
+                        <p class="text-align-center">Villa Nusantara Syariah
+                           <br>Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur
                         </p>
                      </div>
                   </div>
@@ -909,7 +908,7 @@
                <div class="row justify-content-center">
                   <div class="col">
                      <div class=" mb-5 pb-5">
-                        <h1 class="display-4 mb-0">Our Best Friends</h1>
+                        <h1 class="display-4 mb-0">Our Parents</h1>
                         <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8 ">We are lucky to have them in our side</p>
                      </div>
                   </div>

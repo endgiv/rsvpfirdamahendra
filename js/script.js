@@ -110,7 +110,6 @@
 
 
 
-
   // Countdown setup
 
     $('.countdown').countdown('2019/6/2').on('update.countdown', function(event) {
@@ -121,5 +120,9 @@
     + '<div class="col"><div class="card card-body countdown-shadow p-3"><span class="counter text-primary mb-1">%S</span> <span class="label">Second%!S</span></div></div>'));
 });
 
+jQuery(".btn-audio").on("click", function() {
+    var audio = document.getElementById("audio");
+    audio.play();
+});
 
 })(jQuery);
