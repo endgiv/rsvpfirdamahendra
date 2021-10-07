@@ -44,14 +44,15 @@
                      </button>
                      <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end mr-5 ">
                         <ul class=" navbar-nav  header-navbar-nav">
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#resto">Date</a></li>
                            <li><a class=" nav-link scroll d-none d-md-block" href="#wedding">Wedding</a></li>
                            <li><a class=" nav-link scroll d-none d-md-block" href="#gallery">Gallery</a></li>
                            <li><a class=" nav-link scroll d-none d-md-block" href="#gift">Gift Registry</a></li>
-                           <li><a class=" nav-link scroll d-none d-md-block" href="#friends">Friends</a></li>
+                           <li><a class=" nav-link scroll d-none d-md-block" href="#friends">Parents</a></li>
                            <li><a class=" nav-link scroll d-none d-md-block" href="#rsvp">Rsvp</a></li>
                            <li><a class=" nav-link scroll d-none d-md-block" href="#location">Location</a></li>
                            <li><a class=" nav-link scroll d-md-none" href="#resto">Get to know</a></li>
-                           <li><a class=" nav-link scroll" href="/how-to-order.php">How to order?</a></li>
+                           <li><a class=" nav-link scroll  d-md-none" href="/how-to-order.php">How to order?</a></li>
                         </ul>
                      </div>
                   </nav>
