@@ -99,7 +99,7 @@
                   Dear, <b>Endra Aji Purnama</b>-<b>Section 1</b><br><br>
                   We would like to invite you to be a part of our new beginning.
 
-                  Please join us on <b>6 November 2021</b> at <b>Villa Nusantara Syariah, Malang</b>.
+                  Please join us on <b>06 November 2021</b> at <b>Villa Nusantara Syariah, Malang</b>.
                   Your presence will be valuable to us.
                   <br><br>
                   Regards,<br>Firda & Mahendra
@@ -147,7 +147,7 @@
                <div class="col-md-6 mb-5 mb-md-0">
                   <div class="pr-md-4">
                      <h1 class="font-secondary display-4">Save the date</h1>
-                     <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday 07 November 2021 - Villa Nusantara Syariah, Malang.</p>
+                     <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday 06 November 2021 - Villa Nusantara Syariah, Malang.</p>
                      <p class="mb-4 pr-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae.</p>
                      <div class="countdown row text-center"></div>
                   </div>
@@ -187,163 +187,9 @@
                </div>
             </div>
          </div>
-         <div class="curved-decoration">
-            <svg width="100%" height="100%" class="bg-secondary-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227" enable-background="new 0 0 2560 168.6227" xml:space="preserve">
-               <g>
-               </g>
-               <g>
-                  <path d="M0,0c0,0,219.6543,165.951,730.788,124.0771c383.3156-31.4028,827.2139-96.9514,1244.7139-96.9514
-      c212.5106,0,438.9999,3.5,584.4982,1.5844v139.9126H0V0z" />
-               </g>
-            </svg>
-         </div>
       </section>
       <!--End date section-->
-      <section id="story" class=" bg-secondary spacer-one-top-lg">
-         <!--Container-->
-         <div class="container spacer-one-bottom-lg">
-            <!--Row-->
-            <div class="row justify-content-center">
-               <div class="col">
-                  <div class=" text-center mb-5 pb-5">
-                     <h1 class="display-4 mb-0">Our Love Story</h1>
-                     <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8 ">The Story of our love and the Wedding</p>
-                  </div>
-               </div>
-            </div>
-            <!--End row-->
-            <div class="row  justify-content-center">
-               <div class="col-lg-12 text-center">
-                  <div class="mb-3 pb-3">
-                     <h5 class="mb-0"> When Jena Miller Met Mike Shneider</h5>
-                     <span class="small text-dark-gray opacity-8">That day changed everything</span>
-                  </div>
-               </div>
-               <div class="col-md-3 d-flex flex-column align-items-center">
-                  <div class="mb-3 pb-3 px-4">
-                     <div class="svg-mask-container">
-                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 607 532" enable-background="new 0 0 607 532" xml:space="preserve">
-                           <defs>
-                              <mask id="mask-small-1">
-                                 <path fill="#FFFFFF" d="M303.2954,55.7655L303.2954,55.7655c-68.9887-68.3032-180.269-68.3601-249.3155,0.1402
-                                       c-69.6423,69.0921-69.0838,181.9562,0.0139,251.5284l201.1888,202.5704c26.2076,26.3876,68.8445,26.5335,95.2321,0.3258
-                                       l201.4838-200.1096c69.6179-69.1431,71.0768-183.7278,2.0303-253.4415C485.013-12.8027,372.7591-13.2244,303.2954,55.7655z" />
-                              </mask>
-                           </defs>
-                           <image mask="url(#mask-small-1)" width="607" height="532" xlink:href="assets/img/mask-md.jpg" />
-                        </svg>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col d-flex flex-column align-items-center">
-                  <ol class="story mb-0">
-                     <li>
-                        <div class="story-icon bg-icon-primary">
-                           <svg version="1.1" class="icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
-                              <path fill="#59745d" d="M53.6825,9.4436L53.6825,9.4436C41.6532-2.4793,22.2392-2.5,10.1866,9.4439
-                                    c-12.1565,12.0471-12.07,31.7375-0.0219,43.8819l35.08,35.3601c4.5697,4.6061,12.0081,4.6357,16.6142,0.0661l35.1704-34.8918
-                                    c12.1523-12.056,12.4179-32.0464,0.3787-44.2154C85.3917-2.5013,65.8078-2.5857,53.6825,9.4436z" />
-                           </svg>
-                        </div>
-                        <div>
-                           <h5 class="mb-0">First met</h5>
-                           <span class="small text-primary">October 2016</span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="story-icon bg-icon-primary">
-                           <svg version="1.1" class="icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
-                              <path fill="#59745d" d="M53.6825,9.4436L53.6825,9.4436C41.6532-2.4793,22.2392-2.5,10.1866,9.4439
-                                    c-12.1565,12.0471-12.07,31.7375-0.0219,43.8819l35.08,35.3601c4.5697,4.6061,12.0081,4.6357,16.6142,0.0661l35.1704-34.8918
-                                    c12.1523-12.056,12.4179-32.0464,0.3787-44.2154C85.3917-2.5013,65.8078-2.5857,53.6825,9.4436z" />
-                           </svg>
-                        </div>
-                        <div>
-                           <h5 class="mb-0">First Dating</h5>
-                           <span class="small text-primary">April 2017</span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="story-icon bg-icon-primary">
-                           <svg version="1.1" class="icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
-                              <path fill="#59745d" d="M53.6825,9.4436L53.6825,9.4436C41.6532-2.4793,22.2392-2.5,10.1866,9.4439
-                                    c-12.1565,12.0471-12.07,31.7375-0.0219,43.8819l35.08,35.3601c4.5697,4.6061,12.0081,4.6357,16.6142,0.0661l35.1704-34.8918
-                                    c12.1523-12.056,12.4179-32.0464,0.3787-44.2154C85.3917-2.5013,65.8078-2.5857,53.6825,9.4436z" />
-                           </svg>
-                        </div>
-                        <div>
-                           <h5 class="mb-0">Love began</h5>
-                           <span class="small text-primary">October 2017</span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="story-icon bg-icon-primary">
-                           <svg version="1.1" class="icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
-                              <path fill="#59745d" d="M53.6825,9.4436L53.6825,9.4436C41.6532-2.4793,22.2392-2.5,10.1866,9.4439
-                                    c-12.1565,12.0471-12.07,31.7375-0.0219,43.8819l35.08,35.3601c4.5697,4.6061,12.0081,4.6357,16.6142,0.0661l35.1704-34.8918
-                                    c12.1523-12.056,12.4179-32.0464,0.3787-44.2154C85.3917-2.5013,65.8078-2.5857,53.6825,9.4436z" />
-                           </svg>
-                        </div>
-                        <div>
-                           <h5 class="mb-0">Together since</h5>
-                           <span class="small text-primary">February 2018</span>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="story-icon bg-icon-primary">
-                           <svg version="1.1" class="icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 107 93" enable-background="new 0 0 107 93" xml:space="preserve">
-                              <path fill="#59745d" d="M53.6825,9.4436L53.6825,9.4436C41.6532-2.4793,22.2392-2.5,10.1866,9.4439
-                                    c-12.1565,12.0471-12.07,31.7375-0.0219,43.8819l35.08,35.3601c4.5697,4.6061,12.0081,4.6357,16.6142,0.0661l35.1704-34.8918
-                                    c12.1523-12.056,12.4179-32.0464,0.3787-44.2154C85.3917-2.5013,65.8078-2.5857,53.6825,9.4436z" />
-                           </svg>
-                        </div>
-                        <div>
-                           <h5 class="mb-0">He proposed</h5>
-                           <span class="small text-primary">September 2018</span>
-                        </div>
-                     </li>
-                  </ol>
-               </div>
-            </div>
-            <div class="row  justify-content-center">
-               <div class="col-md-3 d-flex flex-column align-items-center">
-                  <div class="mb-3 pb-3 mt-3 pt-3 px-4">
-                     <div class="svg-mask-container">
-                        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 607 532" enable-background="new 0 0 607 532" xml:space="preserve">
-                           <defs>
-                              <mask id="mask-small-2">
-                                 <path fill="#FFFFFF" d="M303.2954,55.7655L303.2954,55.7655c-68.9887-68.3032-180.269-68.3601-249.3155,0.1402
-                                       c-69.6423,69.0921-69.0838,181.9562,0.0139,251.5284l201.1888,202.5704c26.2076,26.3876,68.8445,26.5335,95.2321,0.3258
-                                       l201.4838-200.1096c69.6179-69.1431,71.0768-183.7278,2.0303-253.4415C485.013-12.8027,372.7591-13.2244,303.2954,55.7655z" />
-                              </mask>
-                           </defs>
-                           <image mask="url(#mask-small-2)" width="607" height="532" xlink:href="assets/img/mask-md.jpg" />
-                        </svg>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-12 text-center">
-                  <div class="">
-                     <h5 class="mb-0"> Happy ending we will get married</h5>
-                     <span class="small text-dark-gray opacity-8">Counting the days...</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--End container-->
-         <div class="curved-decoration ">
-            <svg width="100%" height="100%" class="bg-white-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227" enable-background="new 0 0 2560 168.6227" xml:space="preserve">
-               <g>
-               </g>
-               <g>
-                  <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
-      c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z" />
-               </g>
-            </svg>
-         </div>
-      </section>
+
       <section id="wedding" class="spacer-one-top-lg">
          <!--Container-->
          <div class="container spacer-one-bottom-lg">
@@ -1156,26 +1002,25 @@
             <div class="row justify-content-center">
                <div class="col">
                   <div class=" mb-5 pb-5 text-center">
-                     <h1 class="display-4 ">Where To Stay</h1>
-                     <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8 ">Accommodation - information below </p>
+                     <h1 class="display-4 ">Location</h1>
+                     <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8 ">Venue - information below </p>
                   </div>
                </div>
             </div>
             <!--End row-->
             <div class="row text-center">
-               <div class="col-md-4 mb-3 mb-md-0 ">
-                  <img src="assets/img/accommodation/1.jpg" alt="Image" class=" rounded img-fluid">
+               <div class=" container-fluid">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.2850263714038!2d112.68814537182652!3d-7.835244699001972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d5a19ab4a7c7%3A0x89c749961c4b9790!2sVilla%20Nusantara%20Syariah!5e0!3m2!1sid!2sid!4v1633664133243!5m2!1sid!2sid" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" class="rounded"></iframe>
+                  <!-- <img src="assets/img/accommodation/1.jpg" alt="Image" class=" rounded img-fluid"> -->
                   <div class="badge-overlap">
                      <span class="badge">Venue</span>
                   </div>
-                  <h5 class="mt-3 mb-3">Hôtel Monaco </h5>
-                  <p>501 Geary Street
-                     <br>San Franciscio, California
-                     <br>(415) 292 - 0100
+                  <h5 class="mt-3 mb-3">Villa Nusantara Syariah</h5>
+                  <p>Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur
                   </p>
-                  <a href="#" class="hover-arrow">Get directions <span class="fa fa-arrow-right"></span></a>
+                  <a href="https://goo.gl/maps/4dLDndjTuHnP5Rp89" class="hover-arrow">Get directions <span class="fa fa-arrow-right"></span></a>
                </div>
-               <div class="col-md-4 mb-3 mb-md-0 ">
+               <!-- <div class="col-md-4 mb-3 mb-md-0 ">
                   <img src="assets/img/accommodation/2.jpg" alt="" class="rounded img-fluid">
                   <div class="badge-overlap">
                      <span class="badge">Accommodation</span>
@@ -1199,7 +1044,7 @@
                   </p>
                   <a href="#" class="hover-arrow">Get directions <span class="fa fa-arrow-right"></span>
                   </a>
-               </div>
+               </div> -->
             </div>
          </div>
          <!--End container-->
