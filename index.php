@@ -1,9 +1,22 @@
 <?php 
+
+if(empty(($_GET['to'])))
+    { $receiver = ""; }
+else
+    { $receiver = ucwords($_GET["to"]);};
+
+if(empty(($_GET['s'])))
+    { $section = ""; } 
+else 
+    { $section = urlencode($_GET["s"]);};
+
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
     "{WEDDING_DATE}" => "Saturday, 07 November 2021",
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
-    "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur"
+    "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
+    "{WEDDING_TO}" => $receiver,
+    "{WEDDING_SECTION}" =>  "Section " . $section
  );
 
 $template = file_get_contents("template.html");
