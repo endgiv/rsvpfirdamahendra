@@ -1,5 +1,18 @@
 <?php 
 
+//check config
+include 'config.php';
+
+//Validasi Karakter
+function validate($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+  }
+
+
+// Templating
 if(empty(($_GET['to'])))
     { $receiver = ""; }
 else
@@ -8,7 +21,7 @@ else
 if(empty(($_GET['s'])))
     { $section = ""; } 
 else 
-    { $section = urlencode($_GET["s"]);};
+    { $section = "Section ".urlencode($_GET["s"]);};
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
@@ -16,7 +29,7 @@ $swap_var = array(
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
     "{WEDDING_TO}" => $receiver,
-    "{WEDDING_SECTION}" =>  "Section " . $section
+    "{WEDDING_SECTION}" =>  $section
  );
 
 $template = file_get_contents("template.html");
