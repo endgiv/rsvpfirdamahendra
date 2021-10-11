@@ -29,7 +29,10 @@ $swap_var = array(
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
     "{WEDDING_TO}" => $receiver,
-    "{WEDDING_SECTION}" =>  $section
+    "{WEDDING_SECTION}" =>  $section,
+    "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
+    "{WEDDING_PARENTS2}" =>  'Darmono & Farida Usman',
+    
  );
 
 $template = file_get_contents("template.html");
