@@ -12,23 +12,35 @@ require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
+//Get Data From RSVP
+include 'config.php';
+// menangkap data yang di kirim dari form
+$name = $_POST['name'];
+$email = $_POST['email'];
+$wish = $_POST['wish'];
+$attend = $_POST['attend'];
+$sesi = substr($_POST['sesi'], -1);
+
+
+
+
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 //Set who the message is to be sent from
-$mail->setFrom('no-reply@endgiv.com', 'First Last');
+$mail->setFrom('no-reply@endgiv.com', 'endgiv');
 //Set an alternative reply-to address
-$mail->addReplyTo('cumadummy1@gmail.com', 'First Last');
+$mail->addReplyTo('hallo@endgiv.com', 'Hallo endgiv!');
 //Set who the message is to be sent to
-$mail->addAddress('endraaji29@gmail.com', 'John Doe');
+$mail->addAddress($email, $name);
 //Set the subject line
-$mail->Subject = 'PHPMailer mail() test';
+$mail->Subject = 'Confirmation';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
+$mail->msgHTML(file_get_contents('mail_templates/mail_confirm.html'), __DIR__);
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
-$mail->addAttachment('images/phpmailer_mini.png');
+// $mail->addAttachment('images/phpmailer_mini.png');
 
 //send the message, check for errors
 if (!$mail->send()) {
