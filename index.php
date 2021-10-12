@@ -19,9 +19,9 @@ else
     { $receiver = ucwords($_GET["to"]);};
 
 if(empty(($_GET['s'])))
-    { $section = ""; } 
+    { $session = ""; } 
 else 
-    { $section = "Section ".urlencode($_GET["s"]);};
+    { $session = "Session ".urlencode($_GET["s"]);};
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
@@ -29,7 +29,7 @@ $swap_var = array(
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
     "{WEDDING_TO}" => $receiver,
-    "{WEDDING_SECTION}" =>  $section,
+    "{WEDDING_SESSION}" =>  $session,
     "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
     "{WEDDING_PARENTS2}" =>  'Darmono & Farida Usman',
     
