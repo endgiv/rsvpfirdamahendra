@@ -24,17 +24,11 @@ $sesi = substr($_POST['sesi'], -1);}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //prepare insert
-            $sqlInsert = "REPLACE into rsvp1 (sesi,nama,email,wish,attend,token) values (?,?,?,?,?,?)";
-            $paramType = "isssss";
-            $paramArray = array(
-                $sesi,
-                $nama,
-                $email,
-                $wish,
-                $attend,
-                $token
-            );
-            $insertId = $db->insert($sqlInsert, $paramType, $paramArray);
+        $sql = "REPLACE INTO rsvp1 (name, email, wish, attend, sesi) VALUES (?, ?, ?, ?, ?)";
+        
+        if($stmt = mysqli_prepare($link, $sql)){
+            //bind var
+            mysqli_stmt_bind_param($stmt, "ssssi", $name, $email, $wish, $attend, $sesi);
             
             if (! empty($insertId)) {
                 echo 'sent';
@@ -42,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $type = "error";
                 $message = "Problem in Importing CSV Data";
             }
-        }
+        }}
         
     
 ?>

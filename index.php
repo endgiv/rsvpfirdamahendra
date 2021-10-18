@@ -14,15 +14,16 @@ function validate($data) {
 
 // Templating
 if(empty(($_GET['t'])))
-    { 
-        $sesi = ""; 
-        $sesi_h = ""; 
-        $nama = ""; 
-        $readonly = ""; 
+    {
+        $receiver = "";
+        $readonly ="";
+        $sesi ="";
+        $nama ="";
     }
 else
-    { 
-        $receiver = $_GET['t'];
+    {
+        $receiver = $_GET["t"];
+        $readonly = "readonly";
         $sqlSelect2 = "SELECT * FROM rsvp1 where token = '$receiver'";
         $result2 = mysqli_query($link,$sqlSelect2);
         if (! empty($result2)) {

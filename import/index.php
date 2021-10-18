@@ -5,7 +5,18 @@ require_once 'DataSource.php';
 $db = new DataSource();
 $conn = $db->getConnection();
 
+if(empty(($_GET['t'])))
+    { $receiver = ""; }
+else
+    { $receiver = $_GET["t"];};
+$sqlSelect2 = "SELECT * FROM rsvp1 where token = '$receiver'";
+$result2 = $db->select($sqlSelect2);
+if (! empty($result2)) {
+    foreach($result2 as $row2){
+        echo $row2['sesi'];
+    };
 
+};
 
 if (isset($_POST["import"])) {
     
@@ -98,6 +109,7 @@ $(document).ready(function() {
 </head>
 
 <body>
+
     <h2>Import CSV file into Mysql using PHP</h2>
 
     <div id="response"
@@ -153,7 +165,7 @@ $(document).ready(function() {
                     <td><?php  echo $row['wish']; ?></td>
                     <td><?php  echo $row['attend']; ?></td>
                     <td><?php  echo $row['token']; ?></td>
-                    <td><a href="<?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?>">Link</a></td>
+                    <td><a href="<?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?>">Link : <?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?></a></td>
                     <td><?php  echo $row['create_date']; ?></td>
                 </tr>
                     <?php
