@@ -42,12 +42,6 @@ else
     $receiver = ""; 
 };
 
-$section_h = array(
-    "Section 1" => "11.00-12.00 WIB",
-    "Section 2" => "12.00-13.00 WIB",
-    "Section 3" => "13.00-14.30 WIB",
-);
-$section_prev = $section_h[$section];
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
