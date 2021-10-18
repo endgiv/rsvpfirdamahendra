@@ -98,7 +98,7 @@
                   <div class="container-fluid">Invitation</div>
                </div>
                <div class="modal-body text-justify">
-                  Dear, <b>{WEDDING_TO}</b>-<b>{WEDDING_SECTION}</b><br><br>
+                  Dear, <b>{WEDDING_TO}</b>-<b>{WEDDING_SESSION}</b><br><br>
                   We would like to invite you to be a part of our new beginning.
 
                   Please join us on <b>{WEDDING_DATE}</b> at <b>{WEDDING_VENUE}</b>.
@@ -837,16 +837,20 @@
                   <form name="rsvp1" id="rsvp1">
                      <div class="form-group">
                         <label>Your Name</label>
-                        <input name="name" id="name" type="text" class="form-control form-control-lg" value="{WEDDING_TO}" placeholder="Your name">
+                        <input name="name" id="name" type="text" class="form-control form-control-lg" value="{WEDDING_TO}" placeholder="Your name" {ATTR_READONLY}>
                      </div>
                      <div class="form-group">
                         <label>Your Session</label>
-                        <input name="sesi" id="sesi" type="text" class="form-control form-control-lg" value ='{WEDDING_SESSION}' placeholder="Your Session" readonly>
+                        <select name="sesi" id="sesi" type="text" class="form-control form-control-lg" value ='{WEDDING_SESSION}' placeholder="Your Session" {ATTR_READONLY}>
+                           <option value="1">Sesi 1</option>
+                           <option value="2">Sesi 2</option>
+                           <option value="3">Sesi 3</option>
+                         </select>
                      </div>
                      <div class="form-group">
                         <label>Email Address</label>
                         <input name="email" id="email" type="text" class="form-control form-control-lg" placeholder="Your email">
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback" >
                            Please provide a valid email.
                          </div>
                      </div>
