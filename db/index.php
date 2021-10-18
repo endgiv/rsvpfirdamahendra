@@ -98,7 +98,8 @@ $(document).ready(function() {
 </head>
 
 <body>
-    <h2>Import CSV file into Mysql using PHP</h2>
+    <h2>Import CSV
+    </h2>
 
     <div id="response"
         class="<?php if(!empty($type)) { echo $type . " display-block"; } ?>">

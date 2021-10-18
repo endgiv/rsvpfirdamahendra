@@ -6,24 +6,7 @@ require_once 'db\DataSource.php';
 $db = new DataSource();
 $conn = $db->getConnection();
 
-if (!empty($_GET['t'])){
-    $receiver = $_GET['t'];
-    $sqlSelect = "SELECT * FROM rsvp1 where token='$receiver'";
-    $result = $db->select($sqlSelect);
-        if (! empty($result)) { 
-            foreach($result as $row){
-            $token = $row['token'];
-            };
-        }
-    }
-    else {
-    //Generate a random string.
-    $token = openssl_random_pseudo_bytes(8);
 
-    //Convert the binary data into hexadecimal representation.
-    $token = bin2hex($token);
-    $token = mysqli_real_escape_string($conn, $token);
-    }
             
 
 // menangkap data yang di kirim dari form
@@ -32,6 +15,21 @@ $email = $_POST['email'];
 $wish = $_POST['wish'];
 $attend = $_POST['attend'];
 $session = substr($_POST['session'], -1);
+$sqlSelect = "SELECT * FROM rsvp1 where name='$name' and session='$session'";
+$result = $db->select($sqlSelect);
+    if (! empty($result)) { 
+        foreach($result as $row){
+        $token = $row['token'];
+        };
+    }
+    else {
+        //Generate a random string.
+        $token = openssl_random_pseudo_bytes(8);
+    
+        //Convert the binary data into hexadecimal representation.
+        $token = bin2hex($token);
+        $token = mysqli_real_escape_string($conn, $token);
+    };
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
