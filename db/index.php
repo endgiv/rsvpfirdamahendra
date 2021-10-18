@@ -153,7 +153,7 @@ $(document).ready(function() {
                     <td><?php  echo $row['wish']; ?></td>
                     <td><?php  echo $row['attend']; ?></td>
                     <td><?php  echo $row['token']; ?></td>
-                    <td><a href="<?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?>">Link</a></td>
+                    <td><a href="<?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?>"><?php  echo 'http://localhost:8012/rsvpfirdamahendra/?t=' . $row['token']; ?></a></td>
                     <td><?php  echo $row['create_date']; ?></td>
                 </tr>
                     <?php
