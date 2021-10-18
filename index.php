@@ -13,18 +13,16 @@ function validate($data) {
 
 
 // Templating
-<<<<<<< HEAD
 if(empty(($_GET['t'])))
-    {
-        $receiver = "";
-        $readonly ="";
-        $sesi ="";
-        $nama ="";
+    { 
+        $sesi = ""; 
+        $sesi_h = ""; 
+        $nama = ""; 
+        $readonly = ""; 
     }
 else
-    {
-        $receiver = $_GET["t"];
-        $readonly = "readonly";
+    { 
+        $receiver = $_GET['t'];
         $sqlSelect2 = "SELECT * FROM rsvp1 where token = '$receiver'";
         $result2 = mysqli_query($link,$sqlSelect2);
         if (! empty($result2)) {
@@ -41,12 +39,6 @@ else
         );
         $sesi_h = $sesi_array[$sesi];
     };
-=======
-if(empty(($_GET['to'])))
-    { $receiver = ""; }
-else
-    { $receiver = ucwords($_GET["to"]);};
->>>>>>> parent of 9ee4c8f (last)
 
 if(empty(($_GET['s'])))
     { $session = ""; } 
