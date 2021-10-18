@@ -1,53 +1,52 @@
 <?php 
 // koneksi database
-include 'config.php';
+use Phppot\DataSource;
 
+require_once 'db\DataSource.php';
+$db = new DataSource();
+$conn = $db->getConnection();
+
+if (!empty($_GET['t'])){
+    $receiver = $_GET['t'];
+    $sqlSelect = "SELECT * FROM rsvp1 where token='$receiver'";
+    $result = $db->select($sqlSelect);
+        if (! empty($result)) { 
+            foreach($result as $row){
+            $token = $row['token'];
+            };
+        }
+    }
+    else {
+    //Generate a random string.
+    $token = openssl_random_pseudo_bytes(8);
+
+    //Convert the binary data into hexadecimal representation.
+    $token = bin2hex($token);
+    $token = mysqli_real_escape_string($conn, $token);
+    }
+            
 
 // menangkap data yang di kirim dari form
 $name = $_POST['name'];
 $email = $_POST['email'];
 $wish = $_POST['wish'];
 $attend = $_POST['attend'];
-$sesi = substr($_POST['sesi'], -1);
+$session = substr($_POST['session'], -1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        //prepare insert
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $sql = "REPLACE INTO rsvp1 (name, email, wish, attend, sesi) VALUES (?, ?, ?, ?, ?)";
-        
-        if($stmt = mysqli_prepare($link, $sql)){
-            //bind var
-            mysqli_stmt_bind_param($stmt, "ssssi", $name, $email, $wish, $attend, $sesi);
-=======
-        $sql = "INSERT INTO rsvp (name, email, wish, attend, sesi) VALUES (?, ?, ?, ?, ?)";
-        
-        if($stmt = mysqli_prepare($link, $sql)){
-            //bind var
-            mysqli_stmt_bind_param($stmt, "sssss", $name, $email, $wish, $attend, $sesi);
->>>>>>> parent of 9ee4c8f (last)
-=======
-            $sqlInsert = "REPLACE into rsvp1 (sesi,nama,email,wish,attend,token) values (?,?,?,?,?,?)";
+
+    $sqlInsert = "REPLACE into rsvp1 (session,name,email,wish,attend, token)
+                   values (?,?,?,?,?,?)";
             $paramType = "isssss";
             $paramArray = array(
-                $sesi,
-                $nama,
+                $session,
+                $name,
                 $email,
                 $wish,
                 $attend,
                 $token
             );
-            $insertId = $db->insert($sqlInsert, $paramType, $paramArray);
->>>>>>> parent of 87b6967 (last)
-            
-            //
-            if(mysqli_stmt_execute($stmt)){
-                //redirect
-                echo 'sent';
-            } else {
-                echo "Kayaknya ada yang salah";
-            }
-        }
-        
-    }
+            $db->insert($sqlInsert, $paramType, $paramArray);
+
+}
 ?>

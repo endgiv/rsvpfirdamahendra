@@ -10,7 +10,7 @@ $(document).ready(function(){
         var email = $('#email').val();
         var wish = $('#wish').val();
         var attend = $('#attend').val();
-        var sesi = $('#sesi').val();
+        var session = $('#session').val();
         
         
         $('#name,#email,#wish,#attend').click(function(){
@@ -44,11 +44,11 @@ $(document).ready(function(){
         }else{
             $('#attend').removeClass("is-invalid");
         }
-        if(sesi.length == 0){
+        if(session.length == 0){
             var error = true;
-            $('#sesi').addClass("is-invalid");
+            $('#session').addClass("is-invalid");
         }else{
-            $('#sesi').removeClass("is-invalid");
+            $('#session').removeClass("is-invalid");
         }
         
         

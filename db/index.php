@@ -17,13 +17,13 @@ if (isset($_POST["import"])) {
         
         while (($column = fgetcsv($file, 10000, ",")) !== FALSE) {
             
-            $sesi = "";
+            $session = "";
             if (isset($column[0])) {
-                $sesi = mysqli_real_escape_string($conn, $column[0]);
+                $session = mysqli_real_escape_string($conn, $column[0]);
             }
-            $nama = "";
+            $name = "";
             if (isset($column[1])) {
-                $nama = mysqli_real_escape_string($conn, $column[1]);
+                $name = mysqli_real_escape_string($conn, $column[1]);
             }
             $email = "";
             if (isset($column[2])) {
@@ -48,12 +48,12 @@ if (isset($_POST["import"])) {
                 $token = mysqli_real_escape_string($conn, $token);
             }
             
-            $sqlInsert = "REPLACE into rsvp1 (sesi,nama,email,wish,attend, token)
+            $sqlInsert = "REPLACE into rsvp1 (session,name,email,wish,attend, token)
                    values (?,?,?,?,?,?)";
             $paramType = "isssss";
             $paramArray = array(
-                $sesi,
-                $nama,
+                $session,
+                $name,
                 $email,
                 $wish,
                 $attend,
@@ -131,7 +131,7 @@ $(document).ready(function() {
             <table id='userTable'>
             <thead>
                 <tr>
-                    <th>Sesi</th>
+                    <th>Session</th>
                     <th>Nama</th>
                     <th>Wish</th>
                     <th>Attend</th>
@@ -148,8 +148,8 @@ $(document).ready(function() {
                     
                 <tbody>
                 <tr>
-                    <td><?php  echo $row['sesi']; ?></td>
-                    <td><?php  echo $row['nama']; ?></td>
+                    <td><?php  echo $row['session']; ?></td>
+                    <td><?php  echo $row['name']; ?></td>
                     <td><?php  echo $row['wish']; ?></td>
                     <td><?php  echo $row['attend']; ?></td>
                     <td><?php  echo $row['token']; ?></td>

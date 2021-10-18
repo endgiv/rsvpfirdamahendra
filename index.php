@@ -2,7 +2,7 @@
 
 use Phppot\DataSource;
 
-require_once 'import\DataSource.php';
+require_once 'db\DataSource.php';
 $db = new DataSource();
 $conn = $db->getConnection();
 
@@ -13,16 +13,16 @@ $result = $db->select($sqlSelect);
     if (! empty($result)) { 
         foreach($result as $row){
             echo $row['token'];
-            echo $row['nama'];
-            $sesi = 'Session ' . $row['sesi'];
-                    $nama = $row['nama'];
+            echo $row['name'];
+            $session = 'Session ' . $row['session'];
+                    $name = $row['name'];
                     $readonly = "readonly";
-                    $sesi_array = array(
+                    $session_array = array(
                         "Session 1" => "11.00-12.00 WIB",
                         "Session 2" => "12.00-13.00 WIB",
                         "Session 3" => "13.00-14.30 WIB",
                     );
-                    $sesi_h = $sesi_array[$sesi];
+                    $session_h = $session_array[$session];
         };
 
         $readonly = "readonly";
@@ -35,9 +35,9 @@ $result = $db->select($sqlSelect);
 else
 {
     
-    $sesi = ""; 
-    $sesi_h = ""; 
-    $nama = ""; 
+    $session = ""; 
+    $session_h = ""; 
+    $name = ""; 
     $readonly = ""; 
     $receiver = ""; 
 };
@@ -45,11 +45,12 @@ else
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
-    "{WEDDING_DATE}" => "Saturday, 07 November 2021",
+    "{WEDDING_DATE}" => "Saturday 07 November 2021",
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
-    "{WEDDING_TO}" => $nama,
-    "{WEDDING_SESSION}" =>  $sesi,
+    "{WEDDING_TO}" => $name,
+    "{WEDDING_SESSION}" =>  $session,
+    "{WEDDING_SESSION_H}" =>  $session_h,
     "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
     "{WEDDING_PARENTS2}" =>  'Darmono & Farida Usman',
     "{ATTR_READONLY}" =>  $readonly,

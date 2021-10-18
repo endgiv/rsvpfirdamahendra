@@ -11,7 +11,8 @@ $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
 // Check connection
 if($link === false){
-    die("ERROR: Could not connect. ");
+    header('Location: https://www.endgiv.com/');
+exit;
 }
 
 ?>
