@@ -1,27 +1,46 @@
 <?php 
 
-//check config
-include 'config.php';
+use Phppot\DataSource;
 
-//Validasi Karakter
-function validate($data) {
-	$data = trim($data);
-	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
-	return $data;
-  }
+require_once 'import\DataSource.php';
+$db = new DataSource();
+$conn = $db->getConnection();
 
+if (!empty($_GET['t'])){
+$receiver = $_GET['t'];
+$sqlSelect = "SELECT * FROM rsvp1 where token='$receiver'";
+$result = $db->select($sqlSelect);
+    if (! empty($result)) { 
+        foreach($result as $row){
+            echo $row['token'];
+            echo $row['nama'];
+            $sesi = 'Session ' . $row['sesi'];
+                    $nama = $row['nama'];
+                    $readonly = "readonly";
+                    $sesi_array = array(
+                        "Session 1" => "11.00-12.00 WIB",
+                        "Session 2" => "12.00-13.00 WIB",
+                        "Session 3" => "13.00-14.30 WIB",
+                    );
+                    $sesi_h = $sesi_array[$sesi];
+        };
 
-// Templating
-if(empty(($_GET['to'])))
-    { $receiver = ""; }
+        $readonly = "readonly";
+    }
+    else
+    {
+        die('hehehehe');
+    };
+}
 else
-    { $receiver = ucwords($_GET["to"]);};
-
-if(empty(($_GET['s'])))
-    { $section = ""; } 
-else 
-    { $section = "Section ".urlencode($_GET["s"]);};
+{
+    
+    $sesi = ""; 
+    $sesi_h = ""; 
+    $nama = ""; 
+    $readonly = ""; 
+    $receiver = ""; 
+};
 
 $section_h = array(
     "Section 1" => "11.00-12.00 WIB",
@@ -35,11 +54,12 @@ $swap_var = array(
     "{WEDDING_DATE}" => "Saturday, 07 November 2021",
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
-    "{WEDDING_TO}" => $receiver,
-    "{WEDDING_SECTION}" =>  $section,
-    "{WEDDING_SECTION_P}" =>  $section_prev,
+    "{WEDDING_TO}" => $nama,
+    "{WEDDING_SESSION}" =>  $sesi,
     "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
     "{WEDDING_PARENTS2}" =>  'Darmono & Farida Usman',
+    "{ATTR_READONLY}" =>  $readonly,
+    "{ATTR_SELECT}" =>  $readonly,
     
  );
 
