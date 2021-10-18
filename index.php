@@ -13,6 +13,7 @@ function validate($data) {
 
 
 // Templating
+<<<<<<< HEAD
 if(empty(($_GET['t'])))
     {
         $receiver = "";
@@ -40,22 +41,27 @@ else
         );
         $sesi_h = $sesi_array[$sesi];
     };
+=======
+if(empty(($_GET['to'])))
+    { $receiver = ""; }
+else
+    { $receiver = ucwords($_GET["to"]);};
+>>>>>>> parent of 9ee4c8f (last)
 
-
-
-    
+if(empty(($_GET['s'])))
+    { $session = ""; } 
+else 
+    { $session = "Session ".urlencode($_GET["s"]);};
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
     "{WEDDING_DATE}" => "Saturday, 07 November 2021",
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
-    "{WEDDING_TO}" => $nama,
-    "{WEDDING_SESSION}" =>  $sesi,
-    "{WEDDING_SESSION_H}" =>  $sesi_h,
+    "{WEDDING_TO}" => $receiver,
+    "{WEDDING_SESSION}" =>  $session,
     "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
     "{WEDDING_PARENTS2}" =>  'Darmono & Farida Usman',
-    "{ATTR_READONLY}" =>  $readonly,
     
  );
 
