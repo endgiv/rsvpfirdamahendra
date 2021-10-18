@@ -26,8 +26,8 @@ function validate($data) {
                         <input name="name" id="name" type="text" class="form-control form-control-lg" value="{WEDDING_TO}" placeholder="Your name">
                      </div>
                      <div class="form-group">
-                        <label>Your Section</label>
-                        <input name="sesi" id="sesi" type="text" class="form-control form-control-lg" value ='{WEDDING_SECTION}' placeholder="Your Section">
+                        <label>Your Session</label>
+                        <input name="sesi" id="sesi" type="text" class="form-control form-control-lg" value ='{WEDDING_SESSION}' placeholder="Your Session">
                      </div>
                      <div class="form-group">
                         <label>Email Address</label>
