@@ -98,21 +98,21 @@
 
 // Instagram feed setup
 
-    var instaFeed = new Instafeed({
-        get: 'user',
-        userId: '13339175373',
-        accessToken: '13339175373.95cbc68.b63a06b452874b6e8384eebc29a005ce',
-        limit: 5,
-        resolution: 'standard_resolution',
-        template: '<li><a class="hover-effect rounded-circle" target="_blank" href="{{link}}"><span class="hover-effect-container"><span class="hover-effect-icon hover-effect-icon-small"><span class="fa fa-heart hover-effect-icon-inner"></span></span></span></span><img class=" mw-100" src="{{image}}" /></a></li>'
-    });
-    instaFeed.run();
+    // var instaFeed = new Instafeed({
+    //     get: 'user',
+    //     userId: '13339175373',
+    //     accessToken: '13339175373.95cbc68.b63a06b452874b6e8384eebc29a005ce',
+    //     limit: 5,
+    //     resolution: 'standard_resolution',
+    //     template: '<li><a class="hover-effect rounded-circle" target="_blank" href="{{link}}"><span class="hover-effect-container"><span class="hover-effect-icon hover-effect-icon-small"><span class="fa fa-heart hover-effect-icon-inner"></span></span></span></span><img class=" mw-100" src="{{image}}" /></a></li>'
+    // });
+    // instaFeed.run();
 
 
 
   // Countdown setup
 
-    $('.countdown').countdown('2019/6/2').on('update.countdown', function(event) {
+    $('.countdown').countdown('2021/11/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 ">%d</span> <span class="label ">Day%!d</span></div></div> '
     + '<div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%H</span> <span class="label">Hour%!H</span></div></div> '
@@ -122,7 +122,19 @@
 
 jQuery(".btn-audio").on("click", function() {
     var audio = document.getElementById("audio");
-    audio.play();
+    if (audio.paused == false) {
+        audio.pause()
+        $('#play').addClass("d-block");
+        $('#play').removeClass("d-nonek");
+        $('#pause').addClass("d-none");
+        $('#pause').removeClass("d-block");
+    } else {
+        audio.play();
+        $('#play').removeClass("d-block");
+        $('#play').addClass("d-none");
+        $('#pause').removeClass("d-none");
+        $('#pause').addClass("d-block");
+  }
 });
 
 

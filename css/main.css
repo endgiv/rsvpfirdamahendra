@@ -334,6 +334,9 @@ section#wishes:after{
 .btn-play > .icon-svg{
   height: 1rem;
 }
+.btn.btn-music {
+    border-radius: 500px;
+}
 
 .svg-decoration {
     position: absolute;

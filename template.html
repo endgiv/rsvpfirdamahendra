@@ -67,8 +67,16 @@
 
       </header>
       <!--Bottom Navbar-->
-
-      <nav class="navbar navbar-dark card card-body bg-primary navbar-expand d-md-none fixed-bottom justify-content-center show p-0 shadow-lg">
+      <nav class="navbar navbar-dark  navbar-expand d-md-none fixed-bottom  show container- d-flex flex-column">
+         <div class="d-flex justify-content-end container-fluid">
+            <div class="btn btn-music bg-primary d-flex align-items-center mb-3  mr-3 shadow-lg btn-audio">
+               <div class=" text-white">
+                  <span class="fi fi-rr-pause d-none" id="pause"></span>
+                  <span class="fi fi-rr-play" id="play"></span>
+               </div>
+            </div>
+         </div>
+         <div class="navbar-collapse collapse card card-body bg-primary justify-content-center p-0 shadow-lg container-fluid">
          <ul class="navbar-nav nav-justified w-100 d-flex align-items-center">
             <li class="nav-item small"><a class=" nav-link text-center scroll" href="#wrapper">
                   <span class="fi fi-rr-home"></span><br>
@@ -86,12 +94,13 @@
                   <span class="fi fi-rr-marker"></span><br>
                   <span class="small">Location</span></a></li>
          </ul>
+      </div>
       </nav>
 
       <!--End Bottom Navbar-->
       <!--End header-->
       <!-- Modal -->
-      <div class="modal fade btn-audio" id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal fade " id="personModal" tabindex="-1" role="dialog" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header font-secondary h4 text-center text-primary">
@@ -107,7 +116,7 @@
                   Regards,<br>{WEDDING_NAME}
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary container-fluid" data-dismiss="modal">Open</button>
+                  <button type="button" class="btn btn-primary btn-audio container-fluid" data-dismiss="modal">Open</button>
                   <audio id="audio" src="assets/audio/audio.mp3" type="audio/mpeg" loop="true"></audio>
                </div>
             </div>
@@ -217,13 +226,15 @@
                      <div class="icon-round mb-5 mb-md-5  bg-icon-primary">
                         <span class=" fi fi-rr-cake-wedding text-primary" style="font-size: 40px;"></span>
                      </div>
-                     <h5 class="mb-0">Main Ceremony</h5>
-                     <h6 class="mb-5">16:00h - 17:00</h6>
-                     <p class="text-align-center">Hôtel Monaco
+                     <h5 class="mb-0">Main Ceremony - Akad</h5>
+                     <h6 class="mb-5">the event has already taken place</h6>
+                     <p class="text-align-center">Acara sudah dilaksanakan
+                     </p>
+                     <!-- <p class="text-align-center">Hôtel Monaco
                         <br>501 Route de Geary
                         <br>San Franciscio
                         <br>(415) 292 - 0100
-                     </p>
+                     </p> -->
                   </div>
                </div>
                <div class="col-md-6 col-lg-4 d-flex ">
@@ -1086,7 +1097,7 @@
    <script src="js/jquery.magnific-popup.min.js"></script>
    <script src="js/jquery.countdown.min.js"></script>
    <script src="js/placeholders.min.js"></script>
-   <script src="js/instafeed.min.js"></script>
+   <!-- <script src="js/instafeed.min.js"></script> -->
    <script src="js/script.js"></script>
    <script src="js/validation.js"></script>
    <!-- Google analytics -->
