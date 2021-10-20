@@ -15,7 +15,7 @@ Created by : mutationthemes
 5.Love story
 6.Wedding
 7.Gallery
-8.Gift registry
+8.Wishes registry
 9.RSVP
 19.Footer
 11.Miscellaneous
@@ -288,9 +288,9 @@ svg.icon-svg{
 
 /*End gallery section*/
 
-/*Gift section*/
+/*Wishes section*/
 
-section#gift:after{
+section#wishes:after{
   background-image: url(../assets/svg/pattern.svg);
   background-repeat: repeat;
   position: absolute;
@@ -304,8 +304,15 @@ section#gift:after{
     height: 1.5rem;
     fill: #ffffff;
 }
+.scrollbar {
+    height: 350px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
-/*End gift section*/
+
+/*End wish section*/
 
 /*RSVP*/
 
@@ -340,7 +347,11 @@ section#gift:after{
     right: -11rem;
 }
 
-
+.count {
+    float: right;
+    padding: 0.1rem 0 0 0;
+    font-size: 0.875rem;
+  }
 /*End RSVP*/
 
 /* Footer*/
@@ -687,7 +698,7 @@ ul.instafeed-list li{
     fill: #ffffff;
 }
 
-section#gift:after{
+section#wishes:after{
   height: 780px;
 }
 

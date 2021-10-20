@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    const input = document.querySelector('#wish');
+    const count = document.querySelector('#counter');
+    const mxlenght = input.getAttribute("maxlength");
+    input.onkeyup = () => {
+    count.innerText = mxlenght - input.value.length;
+    };
+
     $('#submit').click(function(e){
         
         //Stop form submission & check the validation
@@ -32,7 +39,7 @@ $(document).ready(function(){
         }else{
             $('#email').removeClass("is-invalid");
         }
-        if(wish.length == 0 || wish.length > 50 ){
+        if(wish.length == 0 || wish.length > 150 ){
             var error = true;
             $('#wish').addClass("is-invalid");
         }else{
