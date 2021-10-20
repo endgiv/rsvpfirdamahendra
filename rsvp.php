@@ -45,6 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $token
             );
             $db->insert($sqlInsert, $paramType, $paramArray);
+            $status = $db->insert($sqlInsert, $paramType, $paramArray);
+            if(!$status==false){
+                echo 'sent';
+            }
 
 }
 ?>

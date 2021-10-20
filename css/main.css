@@ -352,6 +352,22 @@ section#wishes:after{
     padding: 0.1rem 0 0 0;
     font-size: 0.875rem;
   }
+  .error {
+	display: none;
+	padding: 20px;
+	border: none;
+	color: #d9534f;
+	border: solid 1px #ddd;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.success {
+	display: none;
+	padding: 20px;
+	color: #59745d;
+	border: solid 1px #ddd;
+	margin-top: 10px;
+}
 /*End RSVP*/
 
 /* Footer*/

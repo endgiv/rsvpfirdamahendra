@@ -14,6 +14,7 @@ $result = $db->select($sqlSelect);
         foreach($result as $row){
             echo $row['token'];
             echo $row['name'];
+            $session_n = $row['session'];
             $session = 'Session ' . $row['session'];
                     $name = $row['name'];
                     $readonly = "readonly";
@@ -24,8 +25,9 @@ $result = $db->select($sqlSelect);
                     );
                     $session_h = $session_array[$session];
         };
-        $session_f = $session." - ".$session_h;
+        $session_f = $session." : ".$session_h;
         $readonly = "readonly";
+        $rsvp_session = '<option value="'.$session_n.'">'.$session_h.'</option>';
     }
     else
     {
@@ -37,14 +39,15 @@ else
     
     $session = ""; 
     $session_h = ""; 
-    $session_f = "Session 1 - 11.00-12.00 WIB <br> Session 2 : 12.00-13.00 WIB <br> Session 3 : 13.00-14.30 WIB"; 
+    $session_f = "Session 1 : 11.00-12.00 WIB <br> Session 2 : 12.00-13.00 WIB <br> Session 3 : 13.00-14.30 WIB";
+    $rsvp_session = '<option value="1">11.00-12.00 WIB</option> <option value="2">12.00-13.00 WIB</option> <option value="3">13.00-14.30 WIB</option>';
     $name = ""; 
     $readonly = ""; 
     $receiver = ""; 
 };
 
 $wishes ='';
-$sqlSelect1 = "SELECT * FROM rsvp1 where wish <>''";
+$sqlSelect1 = "SELECT * FROM rsvp1 where wish <>'' order by id desc";
 $result1 = $db->select($sqlSelect1);
     if (! empty($result1)) { 
         foreach($result1 as $wish) {
@@ -59,6 +62,7 @@ $swap_var = array(
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",
     "{WEDDING_TO}" => $name,
+    "{WEDDING_RSVP_SESSION}" => $rsvp_session,
     "{WEDDING_SESSION}" =>  $session,
     "{WEDDING_SESSION_H}" =>  $session_h,
     "{WEDDING_PARENTS1}" =>  'Sadfudji Hadijanto & Lelly Asmara Sari',
