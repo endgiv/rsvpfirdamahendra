@@ -1,6 +1,13 @@
 <?php 
 // koneksi database
 use Phppot\DataSource;
+//Import the PHPMailer class into the global namespace
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
 
 require_once 'db\DataSource.php';
 $db = new DataSource();
@@ -44,11 +51,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $attend,
                 $token
             );
-            $db->insert($sqlInsert, $paramType, $paramArray);
+            // $db->insert($sqlInsert, $paramType, $paramArray);
             $status = $db->insert($sqlInsert, $paramType, $paramArray);
             if(!$status==false){
                 echo 'sent';
             }
 
+    $template_file ='mail_templates/mail_confirm.html'
 }
 ?>
