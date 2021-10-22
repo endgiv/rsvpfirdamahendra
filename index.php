@@ -19,9 +19,9 @@ $result = $db->select($sqlSelect);
                     $name = $row['name'];
                     $readonly = "readonly";
                     $session_array = array(
-                        "Session 1" => "11.00-12.00 WIB",
-                        "Session 2" => "12.00-13.00 WIB",
-                        "Session 3" => "13.00-14.30 WIB",
+                        "Session 1" => "11.00 - 12.00 WIB",
+                        "Session 2" => "12.00 - 13.00 WIB",
+                        "Session 3" => "13.00 - 14.30 WIB",
                     );
                     $session_h = $session_array[$session];
         };
@@ -39,7 +39,7 @@ else
     
     $session = ""; 
     $session_h = ""; 
-    $session_f = "Session 1 : 11.00-12.00 WIB <br> Session 2 : 12.00-13.00 WIB <br> Session 3 : 13.00-14.30 WIB";
+    $session_f = "Session 1 : 11.00 - 12.00 WIB <br> Session 2 : 12.00 - 13.00 WIB <br> Session 3 : 13.00 - 14.30 WIB";
     $rsvp_session = '<option value="1">11.00-12.00 WIB</option> <option value="2">12.00-13.00 WIB</option> <option value="3">13.00-14.30 WIB</option>';
     $name = ""; 
     $readonly = ""; 
@@ -57,7 +57,7 @@ $result1 = $db->select($sqlSelect1);
 
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
-    "{WEDDING_DATE}" => "Saturday 07 November 2021",
+    "{WEDDING_DATE}" => "Saturday, 06 November 2021",
     "{WEDDING_HOUR}" => $session_f,
     "{WEDDING_VENUE}" => "Villa Nusantara Syariah, Malang",
     "{WEDDING_LOCATION}" => "Jl. Argobimo No.29, Krajan, Ketindan, Kec. Lawang, Malang, Jawa Timur",

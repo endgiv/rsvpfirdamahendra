@@ -57,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo 'sent';
             }
 
-    $template_file ='mail_templates/mail_confirm.html'
+
 }
+
 ?>
