@@ -2,7 +2,7 @@
 
 use Phppot\DataSource;
 
-require_once 'db\DataSource.php';
+require_once '.\db\DataSource.php';
 $db = new DataSource();
 $conn = $db->getConnection();
 
