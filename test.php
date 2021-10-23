@@ -2,10 +2,11 @@
 
 
 $session_array = array(
-    "Session 1" => "11.00-12.00 WIB",
-    "Session 2" => "12.00-13.00 WIB",
-    "Session 3" => "13.00-14.30 WIB",
+    "1" => "11.00-12.00 WIB",
+    "2" => "12.00-13.00 WIB",
+    "3" => "13.00-14.30 WIB",
 );
+$session_h = $session_array[$session];
 $swap_var = array(
     "{WEDDING_NAME}" => "Firda &amp; Mahendra",
     "{WEDDING_TO}" => "Endra Aji",
@@ -14,6 +15,7 @@ $swap_var = array(
     "{WEDDING_ATTEND}" =>"<br><b>Attending</b><br>"."Yes",
     "{WEDDING_SESSION}" =>"<br><b>Saturday, 06 November 2021</b>"."<br>"."11.00-12.00 WIB"
 );
+
 
 $template_file ='./mail_templates/mail_confirm.html';
 if(file_exists($template_file)){
@@ -26,6 +28,5 @@ if(file_exists($template_file)){
 else {
     die('unable to locate template');
 }
-echo $email_message;
 
 ?>
