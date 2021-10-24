@@ -112,7 +112,7 @@
 
   // Countdown setup
 
-    $('.countdown').countdown('2021/11/07').on('update.countdown', function(event) {
+    $('.countdown').countdown('2019/11/07').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
     + '<div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 ">%d</span> <span class="label ">Day%!d</span></div></div> '
     + '<div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%H</span> <span class="label">Hour%!H</span></div></div> '

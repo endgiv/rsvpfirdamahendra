@@ -2,18 +2,20 @@
 
 use Phppot\DataSource;
 
-require_once '.\db\DataSource.php';
+// define('__ROOT__', dirname(dirname(__FILE__)));
+// require_once(__ROOT__.'\DataSource.php'); 
+require_once(".\db\DataSource.php"); 
 $db = new DataSource();
 $conn = $db->getConnection();
-
 if (!empty($_GET['t'])){
 $receiver = $_GET['t'];
 $sqlSelect = "SELECT * FROM rsvp1 where token='$receiver'";
 $result = $db->select($sqlSelect);
     if (! empty($result)) { 
         foreach($result as $row){
-            echo $row['token'];
-            echo $row['name'];
+            //test session
+            // echo $row['token'];
+            // echo $row['name'];
             $session_n = $row['session'];
             $session = 'Session ' . $row['session'];
                     $name = $row['name'];
@@ -31,7 +33,9 @@ $result = $db->select($sqlSelect);
     }
     else
     {
-        die('hehehehe');
+        die(
+            '<img src="assets/img/hai-kak.jpg" alt="">'
+        );
     };
 }
 else

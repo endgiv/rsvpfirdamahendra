@@ -79,21 +79,6 @@ $(document).ready(function(){
                     $('#submit').removeAttr('disabled').attr('value', 'Confirm');
                 }
             });
-            /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-            $.post("rsvp.php", $("#rsvp1").serialize(),function(result){
-                //Check the result set from email.php file.
-                if(result == 'sent'){
-                    //If the email is sent successfully, remove the submit button
-                     $('#submit').remove();
-                    //Display the success message
-                    $('#mail_success').fadeIn(500);
-                }else{
-                    //Display the error message
-                    $('#mail_fail').fadeIn(500);
-                    // Enable the submit button again
-                    $('#submit').removeAttr('disabled').attr('value', 'Confirm');
-                }
-            });
         }
     });    
 });

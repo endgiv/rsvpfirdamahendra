@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //Set who the message is to be sent to
             $mail->addAddress($email, $name);
             //Set the subject line
-            $mail->Subject = 'Confirmation';
+            $mail->Subject = 'Thank you for registering';
             //Read an HTML message body from an external file, convert referenced images to embedded,
             //convert HTML into a basic plain-text alternative body
             $mail->msgHTML($email_message);
